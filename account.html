@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | Luna Flats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="container-fluid">
+            <nav>
+                <a href="index.html" class="brand-logo">Luna Flats</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html" class="active">Account</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="account-container" data-reveal>
+                <!-- Sign In Form -->
+                <div class="account-form" style="border-right: 1px solid #eee;">
+                    <h2>Sign In</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="signin-email">Email Address</label>
+                            <input type="email" id="signin-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signin-password">Password</label>
+                            <input type="password" id="signin-password" placeholder="Password" required>
+                        </div>
+                        <div class="form-options">
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox"> Remember Me
+                            </label>
+                            <a href="#" style="color: var(--accent-color);">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Sign In</button>
+                    </form>
+                    
+                    <div class="social-login">
+                        <p style="color: #888; font-size: 0.9rem;">Or sign in with</p>
+                        <div class="social-btns">
+                            <div class="social-btn">
+                                <i class="fa-brands fa-google" style="color: #DB4437;"></i> Google
+                            </div>
+                            <div class="social-btn">
+                                <i class="fa-brands fa-facebook-f" style="color: #4267B2;"></i> Facebook
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div class="account-form">
+                    <h2>Sign Up</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Create an account to track your orders and enjoy faster checkout.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="signup-name">Full Name</label>
+                            <input type="text" id="signup-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email Address</label>
+                            <input type="email" id="signup-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" placeholder="Password" required>
+                        </div>
+                        <p style="font-size: 0.8rem; color: #888; margin-bottom: 20px;">By signing up, you agree to our Terms and Privacy Policy.</p>
+                        <button type="submit" class="btn btn-outline" style="width: 100%;">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none;">
+                <p>&copy; 2026 Luna Flats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

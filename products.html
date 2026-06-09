@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Luna Flats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="container-fluid">
+            <nav>
+                <a href="index.html" class="brand-logo">Luna Flats</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-reveal>
+                <h2>The Ballet Collection</h2>
+                <p>Elegant and comfortable flats for the modern woman handcrafted for ultimate elegance.</p>
+            </div>
+
+            <!-- Filters and Search -->
+            <div class="filters-bar" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;" data-reveal>
+                <div class="search-box" style="position: relative; max-width: 300px; width: 100%;">
+                    <input type="text" placeholder="Search collection..." style="width: 100%; padding: 12px 40px 12px 20px; border-radius: 50px; border: 1px solid #eee; outline: none;">
+                    <i class="fa-solid fa-magnifying-glass" style="position: absolute; right: 20px; top: 15px; color: #888;"></i>
+                </div>
+                
+                <div class="filter-options" style="display: flex; gap: 20px; align-items: center;">
+                    <select id="category-filter" style="padding: 10px 20px; border-radius: 10px; border: 1px solid #eee; outline: none;">
+                        <option value="all">All Styles</option>
+                        <option value="two-tone">Two-Tone</option>
+                        <option value="quilted">Quilted</option>
+                        <option value="classic">Classic Leather</option>
+                    </select>
+                    
+                    <select id="sort-products" style="padding: 10px 20px; border-radius: 10px; border: 1px solid #eee; outline: none;">
+                        <option value="newest">Sort by Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Best Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product1.jpg" alt="Autumn Brown Leather">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Camel Suede Classic Ballet Flats</h3>
+                        <p class="price">$120.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product2.jpg" alt="Classic Cream Ballerina">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lime Green Suede Ballet Flats</h3>
+                        <p class="price">$115.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product3.jpg" alt="Sunny Yellow Suede">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Grommet Detailed Ballet Flats</h3>
+                        <p class="price">$130.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product4.jpg" alt="Midnight Crimson Flat">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Leather Classic Ballet Flats</h3>
+                        <p class="price">$110.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product5.jpg" alt="Noir Leather Classic">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mauve Pink Leather Square-Toe Ballet Flats</h3>
+                        <p class="price">$125.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product6.jpg" alt="Toasted Almond Flat">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Beige and Brown Monogram Canvas Square-Toe Ballet Flats</h3>
+                        <p class="price">$140.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product7.jpg" alt="Ruby Red Comfort">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Leather Mary Jane Ballet Flats with Elastic Strap</h3>
+                        <p class="price">$115.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product8.jpg" alt="Honey Tan Heritage">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Honey Tan Heritage</h3>
+                        <p class="price">$135.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product9.jpg" alt="Forest Green Leather">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Olive Green Satin Square-Toe Ballet Flats</h3>
+                        <p class="price">$150.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product10.jpg" alt="Golden Sun Flat">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Split-Toe Ballet Flats</h3>
+                        <p class="price">$110.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product11.jpg" alt="Ocean Blue Suede">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pastel Pink Leather Ballet Flats with Black Trim</h3>
+                        <p class="price">$120.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-card" data-reveal>
+                    <div class="product-img">
+                        <img src="photos/product12.jpg" alt="Mocha Brown Heritage">
+                        <div class="product-overlay">
+                            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mocha Brown Heritage</h3>
+                        <p class="price">$145.00</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="brand-logo" style="color: var(--white);">Luna Flats</a>
+                    <p style="margin-top: 20px; color: #888;">Elegant and comfortable flats for the modern woman.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luna Flats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
